@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C0947CE1639709A004A3649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C3FB9124D872600886AD1 /* Foundation.framework */; };
-		2C0947DA163970BD004A3649 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB114B795E200BCDC1A /* api.c */; };
 		2C0947DB163970BD004A3649 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB214B795E200BCDC1A /* dumper.c */; };
 		2C0947DC163970BD004A3649 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB314B795E200BCDC1A /* emitter.c */; };
 		2C0947DD163970BD004A3649 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB414B795E200BCDC1A /* loader.c */; };
@@ -17,10 +16,6 @@
 		2C0947E0163970BD004A3649 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB714B795E200BCDC1A /* scanner.c */; };
 		2C0947E1163970BD004A3649 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB814B795E200BCDC1A /* writer.c */; };
 		2C0947E2163970BD004A3649 /* YAMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF83D8A124D7A3E008517E5 /* YAMLSerialization.m */; };
-		2C0947E4163970FB004A3649 /* YAMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF83D89124D7A3E008517E5 /* YAMLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C0947E51639718F004A3649 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AC314B7964500BCDC1A /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C0947E61639718F004A3649 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AB914B795E200BCDC1A /* yaml_private.h */; };
-		2C0947E71639718F004A3649 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AAF14B795CC00BCDC1A /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		D319EEA813E5EE2A000EB46D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319EEA713E5EE2A000EB46D /* SenTestingKit.framework */; };
 		D319EEAA13E5EE2A000EB46D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D319EEA913E5EE2A000EB46D /* Cocoa.framework */; };
@@ -36,6 +31,12 @@
 		D319EEC413E5F093000EB46D /* (null) in Sources */ = {isa = PBXBuildFile; };
 		D319EEC513E5F093000EB46D /* (null) in Sources */ = {isa = PBXBuildFile; };
 		D3E92E6413E5F68C00BA5B63 /* basic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D3E92E6313E5F68C00BA5B63 /* basic.yaml */; };
+		D63BA6561729335700E7EC3B /* YAMLSerialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBF83D89124D7A3E008517E5 /* YAMLSerialization.h */; };
+		D63BA6571729338300E7EC3B /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB114B795E200BCDC1A /* api.c */; };
+		D63BA659172933CA00E7EC3B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AC314B7964500BCDC1A /* config.h */; };
+		D63BA65A172933D300E7EC3B /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AAF14B795CC00BCDC1A /* yaml.h */; };
+		D63BA65B172933E300E7EC3B /* YAMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF83D89124D7A3E008517E5 /* YAMLSerialization.h */; settings = {ATTRIBUTES = (); }; };
+		D63BA65C172933EE00E7EC3B /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AB914B795E200BCDC1A /* yaml_private.h */; settings = {ATTRIBUTES = (); }; };
 		EB2B592E124E2117001FFEEB /* events.c in Sources */ = {isa = PBXBuildFile; fileRef = EB2B592D124E2117001FFEEB /* events.c */; };
 		EB2B5952124E230A001FFEEB /* yaml in Copy YAML Files */ = {isa = PBXBuildFile; fileRef = EB6C424F124D9B3E00886AD1 /* yaml */; };
 		EB6C3FBA124D872600886AD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C3FB9124D872600886AD1 /* Foundation.framework */; };
@@ -80,6 +81,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D63BA655172932F900E7EC3B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				D63BA6561729335700E7EC3B /* YAMLSerialization.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB2B5960124E230D001FFEEB /* Copy YAML Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,17 +349,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C0947E3163970DE004A3649 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C0947E4163970FB004A3649 /* YAMLSerialization.h in Headers */,
-				2C0947E51639718F004A3649 /* config.h in Headers */,
-				2C0947E71639718F004A3649 /* yaml.h in Headers */,
-				2C0947E61639718F004A3649 /* yaml_private.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8DC2EF500486A6940098B216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +360,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D63BA658172933A900E7EC3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63BA65A172933D300E7EC3B /* yaml.h in Headers */,
+				D63BA659172933CA00E7EC3B /* config.h in Headers */,
+				D63BA65C172933EE00E7EC3B /* yaml_private.h in Headers */,
+				D63BA65B172933E300E7EC3B /* YAMLSerialization.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -367,9 +378,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C0947D81639709A004A3649 /* Build configuration list for PBXNativeTarget "YAML-iOS" */;
 			buildPhases = (
-				2C0947E3163970DE004A3649 /* Headers */,
 				2C0947C916397099004A3649 /* Sources */,
 				2C0947CA16397099004A3649 /* Frameworks */,
+				D63BA655172932F900E7EC3B /* CopyFiles */,
+				D63BA658172933A900E7EC3B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -545,7 +557,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0947DA163970BD004A3649 /* api.c in Sources */,
 				2C0947DB163970BD004A3649 /* dumper.c in Sources */,
 				2C0947DC163970BD004A3649 /* emitter.c in Sources */,
 				2C0947DD163970BD004A3649 /* loader.c in Sources */,
@@ -554,6 +565,7 @@
 				2C0947E0163970BD004A3649 /* scanner.c in Sources */,
 				2C0947E1163970BD004A3649 /* writer.c in Sources */,
 				2C0947E2163970BD004A3649 /* YAMLSerialization.m in Sources */,
+				D63BA6571729338300E7EC3B /* api.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,26 +714,24 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/yaml-0.1.4/include";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/yaml-0.1.4/include";
-				SDKROOT = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -731,11 +741,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/YAML_iOS.dst;
+				DSTROOT = "/tmp/YAML-iOS.dst";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAML-iOS/YAML-iOS-Prefix.pch";
@@ -745,12 +755,9 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -761,19 +768,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/YAML_iOS.dst;
+				DSTROOT = "/tmp/YAML-iOS.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAML-iOS/YAML-iOS-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
