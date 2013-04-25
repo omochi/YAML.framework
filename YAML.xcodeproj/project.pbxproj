@@ -43,7 +43,7 @@
 		EB6C422C124D9A4B00886AD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C3FB9124D872600886AD1 /* Foundation.framework */; };
 		EB6C4252124D9B4A00886AD1 /* yaml in Copy YAML Files */ = {isa = PBXBuildFile; fileRef = EB6C424F124D9B3E00886AD1 /* yaml */; };
 		EB6C433C124E0CF600886AD1 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6C4226124D9A1700886AD1 /* test.m */; };
-		EB8C1AB014B795CC00BCDC1A /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AAF14B795CC00BCDC1A /* yaml.h */; };
+		EB8C1AB014B795CC00BCDC1A /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AAF14B795CC00BCDC1A /* yaml.h */; settings = {ATTRIBUTES = (); }; };
 		EB8C1ABA14B795E200BCDC1A /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB114B795E200BCDC1A /* api.c */; };
 		EB8C1ABB14B795E200BCDC1A /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB214B795E200BCDC1A /* dumper.c */; };
 		EB8C1ABC14B795E200BCDC1A /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB314B795E200BCDC1A /* emitter.c */; };
@@ -52,7 +52,7 @@
 		EB8C1ABF14B795E200BCDC1A /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB614B795E200BCDC1A /* reader.c */; };
 		EB8C1AC014B795E200BCDC1A /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB714B795E200BCDC1A /* scanner.c */; };
 		EB8C1AC114B795E200BCDC1A /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = EB8C1AB814B795E200BCDC1A /* writer.c */; };
-		EB8C1AC214B795E200BCDC1A /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AB914B795E200BCDC1A /* yaml_private.h */; };
+		EB8C1AC214B795E200BCDC1A /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AB914B795E200BCDC1A /* yaml_private.h */; settings = {ATTRIBUTES = (); }; };
 		EB8C1AC414B7964500BCDC1A /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8C1AC314B7964500BCDC1A /* config.h */; };
 		EBE745BA124F8C0D00618049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C3FB9124D872600886AD1 /* Foundation.framework */; };
 		EBE745BB124F8C0D00618049 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* YAML.framework */; };
@@ -476,7 +476,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "YAML" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -653,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
@@ -678,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
