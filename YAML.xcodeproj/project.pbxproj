@@ -128,7 +128,7 @@
 
 /* Begin PBXFileReference section */
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2C0947CD16397099004A3649 /* libYAML-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libYAML-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0947CD16397099004A3649 /* libYAML-iOS-iphonesimulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libYAML-iOS-iphonesimulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DBCF5E0370ADEE00C91783 /* YAML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAML_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* YAML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YAML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,7 +229,7 @@
 				EB2B5928124E2100001FFEEB /* events */,
 				EBE745C1124F8C0D00618049 /* test */,
 				D319EEA613E5EE2A000EB46D /* YAMLUnitTests.octest */,
-				2C0947CD16397099004A3649 /* libYAML-iOS.a */,
+				2C0947CD16397099004A3649 /* libYAML-iOS-iphonesimulator.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,6 +382,7 @@
 				2C0947CA16397099004A3649 /* Frameworks */,
 				D63BA655172932F900E7EC3B /* CopyFiles */,
 				D63BA658172933A900E7EC3B /* Headers */,
+				D6F4062217300ED1001EF82F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -389,7 +390,7 @@
 			);
 			name = "YAML-iOS";
 			productName = "YAML-iOS";
-			productReference = 2C0947CD16397099004A3649 /* libYAML-iOS.a */;
+			productReference = 2C0947CD16397099004A3649 /* libYAML-iOS-iphonesimulator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		8DC2EF4F0486A6940098B216 /* YAML */ = {
@@ -549,6 +550,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		D6F4062217300ED1001EF82F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -745,7 +759,6 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = "/tmp/YAML-iOS.dst";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAML-iOS/YAML-iOS-Prefix.pch";
@@ -757,7 +770,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)$(EFFECTIVE_PLATFORM_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -772,13 +785,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DSTROOT = "/tmp/YAML-iOS.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAML-iOS/YAML-iOS-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)$(EFFECTIVE_PLATFORM_NAME)";
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
